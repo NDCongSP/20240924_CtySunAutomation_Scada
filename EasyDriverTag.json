@@ -11,7 +11,7 @@
   "IsReadOnly": true,
   "Enabled": true,
   "CreatedDate": "2024-10-01T20:12:43.2651075+07:00",
-  "ModifiedDate": "2024-10-01T20:20:31.0447289+07:00",
+  "ModifiedDate": "2024-10-10T11:17:39.4965679+07:00",
   "ParameterContainer": {
   "DisplayName": null,
   "DisplayParameters": null,
@@ -31,12 +31,12 @@
   "IsReadOnly": false,
   "Enabled": true,
   "CreatedDate": "2024-10-01T20:18:46.6046585+07:00",
-  "ModifiedDate": "2024-10-01T20:20:31.0447289+07:00",
+  "ModifiedDate": "2024-10-10T11:17:39.4965679+07:00",
   "ParameterContainer": {
   "DisplayName": null,
   "DisplayParameters": null,
   "Parameters": {
-    "IpAddress": "127.0.0.1",
+    "IpAddress": "192.168.1.100",
     "Port": "502",
     "DelayBetweenPool": "5",
     "ScanRate": "1000"
@@ -51,7 +51,7 @@
   "IsReadOnly": false,
   "Enabled": true,
   "CreatedDate": "2024-10-01T20:18:55.2835389+07:00",
-  "ModifiedDate": "2024-10-01T21:07:21.6888656+07:00",
+  "ModifiedDate": "2024-10-10T14:17:28.8823636+07:00",
   "ParameterContainer": {
   "DisplayName": null,
   "DisplayParameters": null,
@@ -1279,6 +1279,33 @@
   "AccessPermission": "ReadAndWrite",
   "Offset": 0.0,
   "Gain": 0.01,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "Taget",
+  "Description": "Percent of target value REAL 0~100.0 Unit : %",
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2024-10-10T14:16:42.0385132+07:00",
+  "ModifiedDate": "2024-10-10T14:16:42.0385132+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {}
+},
+  "Address": "403181",
+  "DataTypeName": "DWord",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 0.1,
   "IsInternalTag": false,
   "GUID": null,
   "Retain": false,
