@@ -53,6 +53,7 @@
             this._btnGarph = new EasyScada.Winforms.Controls.ThemedButton();
             this._btnMain = new EasyScada.Winforms.Controls.ThemedButton();
             this._panelMain = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.easyLabel8 = new EasyScada.Winforms.Controls.EasyLabel();
             this.label20 = new System.Windows.Forms.Label();
@@ -86,7 +87,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this._panelBorderTop = new System.Windows.Forms.Panel();
             this._lineHighlight = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.easyTextBox2 = new EasyScada.Winforms.Controls.EasyTextBox();
             this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
             this._panelHeader.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -109,6 +110,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel1)).BeginInit();
             this._panelBorderBottom.SuspendLayout();
             this._panelBorderTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.easyTextBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // _panelHeader
@@ -391,6 +393,7 @@
             // _panelMain
             // 
             this._panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this._panelMain.Controls.Add(this.easyTextBox2);
             this._panelMain.Controls.Add(this.panel14);
             this._panelMain.Controls.Add(this.panel13);
             this._panelMain.Controls.Add(this.panel12);
@@ -417,6 +420,18 @@
             this._panelMain.Name = "_panelMain";
             this._panelMain.Size = new System.Drawing.Size(933, 467);
             this._panelMain.TabIndex = 3;
+            // 
+            // panel14
+            // 
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.BackgroundImage = global::SunAutomation.Properties.Resources.GTB_IMG_002_min;
+            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel14.Location = new System.Drawing.Point(205, 14);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(487, 439);
+            this.panel14.TabIndex = 21;
             // 
             // panel13
             // 
@@ -586,20 +601,19 @@
             this.easyLabel5.DisplayMode = EasyScada.Winforms.Controls.DisplayMode.Value;
             this.easyLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.easyLabel5.ForeColor = System.Drawing.Color.Black;
-            this.easyLabel5.Location = new System.Drawing.Point(12, 402);
+            this.easyLabel5.Location = new System.Drawing.Point(12, 365);
             this.easyLabel5.Name = "easyLabel5";
             this.easyLabel5.Size = new System.Drawing.Size(129, 33);
             this.easyLabel5.StringFormat = null;
             this.easyLabel5.TabIndex = 17;
-            this.easyLabel5.TagPath = "";
-            this.easyLabel5.Text = "??";
+            this.easyLabel5.TagPath = "Local Station/Channel1/Device1/Target";
             this.easyLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(147, 418);
+            this.label15.Location = new System.Drawing.Point(147, 381);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(32, 17);
             this.label15.TabIndex = 16;
@@ -609,7 +623,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(12, 380);
+            this.label16.Location = new System.Drawing.Point(12, 343);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(88, 17);
             this.label16.TabIndex = 15;
@@ -791,17 +805,27 @@
             this._lineHighlight.Size = new System.Drawing.Size(933, 1);
             this._lineHighlight.TabIndex = 2;
             // 
-            // panel14
+            // easyTextBox2
             // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel14.BackgroundImage = global::SunAutomation.Properties.Resources.GTB_IMG_002_min;
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel14.Location = new System.Drawing.Point(205, 14);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(487, 439);
-            this.panel14.TabIndex = 21;
+            this.easyTextBox2.BackColor = System.Drawing.Color.Black;
+            this.easyTextBox2.DropDownBackColor = System.Drawing.SystemColors.Control;
+            this.easyTextBox2.DropDownBorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.easyTextBox2.DropDownDirection = EasyScada.Winforms.Controls.DropDownDirection.None;
+            this.easyTextBox2.DropDownFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.easyTextBox2.DropDownForeColor = System.Drawing.SystemColors.ControlText;
+            this.easyTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.easyTextBox2.ForeColor = System.Drawing.Color.White;
+            this.easyTextBox2.HightLightStatusTime = 3;
+            this.easyTextBox2.Location = new System.Drawing.Point(12, 401);
+            this.easyTextBox2.Name = "easyTextBox2";
+            this.easyTextBox2.Role = null;
+            this.easyTextBox2.Size = new System.Drawing.Size(131, 29);
+            this.easyTextBox2.StringFormat = null;
+            this.easyTextBox2.TabIndex = 22;
+            this.easyTextBox2.TagPath = "Local Station/Channel1/Device1/Target";
+            this.easyTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.easyTextBox2.WriteDelay = 200;
+            this.easyTextBox2.WriteTrigger = EasyScada.Core.WriteTrigger.OnEnter;
             // 
             // currentTimeControl1
             // 
@@ -851,6 +875,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel1)).EndInit();
             this._panelBorderBottom.ResumeLayout(false);
             this._panelBorderTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.easyTextBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -917,6 +942,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label _lbConnectionStatus;
         private System.Windows.Forms.Panel panel14;
+        private EasyScada.Winforms.Controls.EasyTextBox easyTextBox2;
     }
 }
 

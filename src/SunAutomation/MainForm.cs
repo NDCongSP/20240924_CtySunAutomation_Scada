@@ -24,6 +24,7 @@ namespace SunAutomation
         public MainForm()
         {            
             InitializeComponent();
+            Text = "KhoiHung Tech";
 
             _easyDriverConnector = new EasyDriverConnector();
             _easyDriverConnector.ConnectionStatusChaged += _easyDriverConnector_ConnectionStatusChaged;
