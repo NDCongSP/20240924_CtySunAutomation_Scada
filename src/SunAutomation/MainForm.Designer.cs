@@ -147,7 +147,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 60);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Const-Speed";
+            this.label6.Text = "??";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -191,7 +191,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 60);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Local";
+            this.label4.Text = "??";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -238,7 +238,7 @@
             this._lbStatus.Name = "_lbStatus";
             this._lbStatus.Size = new System.Drawing.Size(105, 29);
             this._lbStatus.TabIndex = 4;
-            this._lbStatus.Text = "Running";
+            this._lbStatus.Text = "??";
             this._lbStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
