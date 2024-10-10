@@ -45,7 +45,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
             this._panelBottom = new System.Windows.Forms.Panel();
             this._lbConnectionStatus = new System.Windows.Forms.Label();
             this._btnSetup = new EasyScada.Winforms.Controls.ThemedButton();
@@ -89,6 +88,7 @@
             this._panelBorderTop = new System.Windows.Forms.Panel();
             this._lineHighlight = new System.Windows.Forms.Panel();
             this.easyTextBox2 = new EasyScada.Winforms.Controls.EasyTextBox();
+            this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
             this._panelHeader.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -303,17 +303,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 60);
             this.panel1.TabIndex = 1;
-            // 
-            // currentTimeControl1
-            // 
-            this.currentTimeControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
-            this.currentTimeControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.currentTimeControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.currentTimeControl1.Location = new System.Drawing.Point(0, 0);
-            this.currentTimeControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.currentTimeControl1.Name = "currentTimeControl1";
-            this.currentTimeControl1.Size = new System.Drawing.Size(141, 60);
-            this.currentTimeControl1.TabIndex = 0;
             // 
             // _panelBottom
             // 
@@ -818,8 +807,6 @@
             // 
             // easyTextBox2
             // 
-            this.easyTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.easyTextBox2.BackColor = System.Drawing.Color.Black;
             this.easyTextBox2.DropDownBackColor = System.Drawing.SystemColors.Control;
             this.easyTextBox2.DropDownBorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -839,6 +826,17 @@
             this.easyTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.easyTextBox2.WriteDelay = 200;
             this.easyTextBox2.WriteTrigger = EasyScada.Core.WriteTrigger.OnEnter;
+            // 
+            // currentTimeControl1
+            // 
+            this.currentTimeControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
+            this.currentTimeControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.currentTimeControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.currentTimeControl1.Location = new System.Drawing.Point(0, 0);
+            this.currentTimeControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.currentTimeControl1.Name = "currentTimeControl1";
+            this.currentTimeControl1.Size = new System.Drawing.Size(141, 60);
+            this.currentTimeControl1.TabIndex = 0;
             // 
             // MainForm
             // 

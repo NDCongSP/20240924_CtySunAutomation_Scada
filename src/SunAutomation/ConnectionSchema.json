@@ -2,7 +2,7 @@
   "ItemType": 0,
   "ServerAddress": "phucthinhautomation.ddns.net",
   "Port": 56285,
-  "CommunicationMode": 1,
+  "CommunicationMode": 0,
   "RefreshRate": 100,
   "CreatedDate": "2024-10-09T21:04:59.0121116+07:00",
   "Username": null,
