@@ -25,14 +25,21 @@ namespace SunAutomation.Controls
 
         private void MonitorPanel_Load(object sender, EventArgs e)
         {
-            foreach (var tagLabel in FindStatusControl())
+            try
             {
-                if (!string.IsNullOrWhiteSpace(tagLabel.TagPath))
+                foreach (var tagLabel in FindStatusControl())
                 {
-                    _tagToLabel[tagLabel.TagPath] = tagLabel;
-                    tagLabel.LinkedTag.QualityChanged += LinkedTag_QualityChanged;
+                    if (!string.IsNullOrWhiteSpace(tagLabel.TagPath))
+                    {
+                        _tagToLabel[tagLabel.TagPath] = tagLabel;
+                        tagLabel.LinkedTag.QualityChanged += LinkedTag_QualityChanged;
+                    }
+                    UpdateLabelStatus(tagLabel);
                 }
-                UpdateLabelStatus(tagLabel);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

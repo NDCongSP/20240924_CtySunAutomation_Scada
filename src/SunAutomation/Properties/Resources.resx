@@ -118,17 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GTB_IMG_002_min" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GTB_IMG-002-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-home-94" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-home-94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_chart_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-chart-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8_home_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-home-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_setup_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-setup-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_monitor_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-monitor-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +133,13 @@
   <data name="icons8_presentation_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-presentation-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_setup_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-setup-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GTB_IMG_002_min" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GTB_IMG-002-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_chart_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-chart-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
