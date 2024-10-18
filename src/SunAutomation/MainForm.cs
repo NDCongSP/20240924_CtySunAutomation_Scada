@@ -75,6 +75,12 @@ namespace SunAutomation
 
         private void _btnMonitor_Click(object sender, EventArgs e)
         {
+            if (_easyDriverConnector.ConnectionStatus != ConnectionStatus.Connected)
+            {
+                MessageBox.Show("Mất kết nối với server", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             ShowPanel(_monitorPanel);
         }
 
@@ -89,6 +95,12 @@ namespace SunAutomation
 
         private void _btnSetup_Click(object sender, EventArgs e)
         {
+            if (_easyDriverConnector.ConnectionStatus != ConnectionStatus.Connected)
+            {
+                MessageBox.Show("Mất kết nối với server", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             ShowPanel(_setingsPanel);
         }
 
@@ -124,6 +136,155 @@ namespace SunAutomation
             panel.Visible = true;
             _activePanel = panel;
             panel.BringToFront();
+        }
+
+        private bool _isBusy = false;
+
+        private async void _btnStart_Click(object sender, EventArgs e)
+        {
+            if (_isBusy) return;
+
+            _isBusy = true;
+            try
+            {
+                if (_easyDriverConnector.ConnectionStatus != ConnectionStatus.Connected)
+                {
+                    MessageBox.Show("Mất kết nối với server", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var tag = _easyDriverConnector.GetTag("Local Station/Channel1/Device1/Start_stop");
+                if (tag == null)
+                {
+                    MessageBox.Show("Không tìm thấy tag Start_stop", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                await tag.WriteAsync("1234");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi không ghi được lệnh Start. {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                _isBusy = false;
+            }
+
+        }
+
+        private async void _btnStop_Click(object sender, EventArgs e)
+        {
+            if (_isBusy) return;
+
+            _isBusy = true;
+            try
+            {
+                if (_easyDriverConnector.ConnectionStatus != ConnectionStatus.Connected)
+                {
+                    MessageBox.Show("Mất kết nối với server", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var tag = _easyDriverConnector.GetTag("Local Station/Channel1/Device1/Start_stop");
+                if (tag == null)
+                {
+                    MessageBox.Show("Không tìm thấy tag Start_stop", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                await tag.WriteAsync("4321");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi không ghi được lệnh Start. {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                _isBusy = false;
+            }
+        }
+
+        private async void _btnInc1_Click(object sender, EventArgs e)
+        {
+            if (_isBusy) return;
+
+            _isBusy = true;
+            try
+            {
+                if (_easyDriverConnector.ConnectionStatus != ConnectionStatus.Connected)
+                {
+                    MessageBox.Show("Mất kết nối với server", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var tag = _easyDriverConnector.GetTag("Local Station/Channel1/Device1/Target");
+                if (tag == null)
+                {
+                    MessageBox.Show("Không tìm thấy tag Target", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!double.TryParse(tag.Value, out double targetValue))
+                {
+                    MessageBox.Show("Target không có giá trị", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                targetValue++;
+
+                await tag.WriteAsync($"{targetValue}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi không ghi được lệnh Start. {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                _isBusy = false;
+            }
+        }
+
+        private async void _btnDec1_Click(object sender, EventArgs e)
+        {
+            if (_isBusy) return;
+
+            _isBusy = true;
+            try
+            {
+                if (_easyDriverConnector.ConnectionStatus != ConnectionStatus.Connected)
+                {
+                    MessageBox.Show("Mất kết nối với server", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var tag = _easyDriverConnector.GetTag("Local Station/Channel1/Device1/Target");
+                if (tag == null)
+                {
+                    MessageBox.Show("Không tìm thấy tag Target", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!double.TryParse(tag.Value, out double targetValue))
+                {
+                    MessageBox.Show("Target không có giá trị", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                targetValue--;
+
+                await tag.WriteAsync($"{targetValue}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi không ghi được lệnh Start. {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                _isBusy = false;
+            }
         }
     }
 }
