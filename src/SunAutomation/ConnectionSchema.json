@@ -1,10 +1,10 @@
 {
   "ItemType": 0,
-  "ServerAddress": "103.2.229.47",
+  "ServerAddress": "127.0.0.1",
   "Port": 8800,
   "CommunicationMode": 0,
-  "RefreshRate": 100,
-  "CreatedDate": "2024-10-09T21:04:59.0121116+07:00",
+  "RefreshRate": 1000,
+  "CreatedDate": "2024-10-19T10:09:50.0745166+07:00",
   "Username": null,
   "Password": null,
   "Childs": [
@@ -22,7 +22,7 @@
           "Name": "Channel1",
           "Path": "Local Station/Channel1",
           "Description": null,
-          "DisplayInfo": "ModbusTCP - 127.0.0.1:502",
+          "DisplayInfo": "ModbusTCP - 192.168.1.100:502",
           "Error": null,
           "ConnectionStatus": 0,
           "Childs": [
@@ -664,6 +664,34 @@
                     "DataType": "DWord",
                     "Address": "403076"
                   }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Target",
+                  "Path": "Local Station/Channel1/Device1/Target",
+                  "Description": "Percent of target value REAL 0~100.0 Unit : %",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403181"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Start_stop",
+                  "Path": "Local Station/Channel1/Device1/Start_stop",
+                  "Description": "Start / stop command INT 1234 / 4321 1234 : Start, 4321 : Stop",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403183"
+                  }
                 }
               ],
               "Properties": {
@@ -680,7 +708,7 @@
             }
           ],
           "Properties": {
-            "IpAddress": "127.0.0.1",
+            "IpAddress": "192.168.1.100",
             "Port": "502",
             "DelayBetweenPool": "5",
             "ScanRate": "1000"

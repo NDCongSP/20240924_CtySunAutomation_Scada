@@ -46,11 +46,17 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this._panelBottom = new System.Windows.Forms.Panel();
+            this._btnStart = new EasyScada.Winforms.Controls.ThemedButton();
+            this._btnStop = new EasyScada.Winforms.Controls.ThemedButton();
+            this._btnInc1 = new EasyScada.Winforms.Controls.ThemedButton();
+            this._btnDec1 = new EasyScada.Winforms.Controls.ThemedButton();
+            this._txbTarget = new EasyScada.Winforms.Controls.EasyTextBox();
             this._lbConnectionStatus = new System.Windows.Forms.Label();
             this._btnSetup = new EasyScada.Winforms.Controls.ThemedButton();
             this._btnMonitor = new EasyScada.Winforms.Controls.ThemedButton();
             this._btnMain = new EasyScada.Winforms.Controls.ThemedButton();
             this._panelMain = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.easyLabel8 = new EasyScada.Winforms.Controls.EasyLabel();
             this.label20 = new System.Windows.Forms.Label();
@@ -81,12 +87,6 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this._panelBorderTop = new System.Windows.Forms.Panel();
             this._lineHighlight = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this._txbTarget = new EasyScada.Winforms.Controls.EasyTextBox();
-            this._btnDec1 = new EasyScada.Winforms.Controls.ThemedButton();
-            this._btnInc1 = new EasyScada.Winforms.Controls.ThemedButton();
-            this._btnStop = new EasyScada.Winforms.Controls.ThemedButton();
-            this._btnStart = new EasyScada.Winforms.Controls.ThemedButton();
             this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
             this._panelHeader.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -94,6 +94,7 @@
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this._panelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).BeginInit();
             this._panelMain.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel8)).BeginInit();
@@ -108,7 +109,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel1)).BeginInit();
             this._panelBorderBottom.SuspendLayout();
             this._panelBorderTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).BeginInit();
             this.SuspendLayout();
             // 
             // _panelHeader
@@ -320,6 +320,80 @@
             this._panelBottom.Size = new System.Drawing.Size(1274, 61);
             this._panelBottom.TabIndex = 2;
             // 
+            // _btnStart
+            // 
+            this._btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._btnStart.Location = new System.Drawing.Point(1062, 8);
+            this._btnStart.Name = "_btnStart";
+            this._btnStart.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
+            this._btnStart.Size = new System.Drawing.Size(98, 45);
+            this._btnStart.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._btnStart.TabIndex = 17;
+            this._btnStart.Values.Text = "Start";
+            this._btnStart.Click += new System.EventHandler(this._btnStart_Click);
+            // 
+            // _btnStop
+            // 
+            this._btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._btnStop.Location = new System.Drawing.Point(1166, 8);
+            this._btnStop.Name = "_btnStop";
+            this._btnStop.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
+            this._btnStop.Size = new System.Drawing.Size(98, 45);
+            this._btnStop.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._btnStop.TabIndex = 16;
+            this._btnStop.Values.Text = "Stop";
+            this._btnStop.Click += new System.EventHandler(this._btnStop_Click);
+            // 
+            // _btnInc1
+            // 
+            this._btnInc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._btnInc1.Location = new System.Drawing.Point(975, 8);
+            this._btnInc1.Name = "_btnInc1";
+            this._btnInc1.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
+            this._btnInc1.Size = new System.Drawing.Size(58, 45);
+            this._btnInc1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._btnInc1.TabIndex = 15;
+            this._btnInc1.Values.Text = "+1 %";
+            this._btnInc1.Click += new System.EventHandler(this._btnInc1_Click);
+            // 
+            // _btnDec1
+            // 
+            this._btnDec1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._btnDec1.Location = new System.Drawing.Point(776, 8);
+            this._btnDec1.Name = "_btnDec1";
+            this._btnDec1.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
+            this._btnDec1.Size = new System.Drawing.Size(58, 45);
+            this._btnDec1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._btnDec1.TabIndex = 14;
+            this._btnDec1.Values.Text = "-1 %";
+            this._btnDec1.Click += new System.EventHandler(this._btnDec1_Click);
+            // 
+            // _txbTarget
+            // 
+            this._txbTarget.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._txbTarget.DropDownBackColor = System.Drawing.SystemColors.Control;
+            this._txbTarget.DropDownBorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this._txbTarget.DropDownDirection = EasyScada.Winforms.Controls.DropDownDirection.None;
+            this._txbTarget.DropDownFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._txbTarget.DropDownForeColor = System.Drawing.SystemColors.ControlText;
+            this._txbTarget.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._txbTarget.HightLightStatusTime = 3;
+            this._txbTarget.Location = new System.Drawing.Point(840, 8);
+            this._txbTarget.Name = "_txbTarget";
+            this._txbTarget.Role = null;
+            this._txbTarget.Size = new System.Drawing.Size(129, 47);
+            this._txbTarget.StringFormat = null;
+            this._txbTarget.TabIndex = 13;
+            this._txbTarget.TagPath = "Local Station/Channel1/Device1/Target";
+            this._txbTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this._txbTarget.WriteDelay = 200;
+            this._txbTarget.WriteTrigger = EasyScada.Core.WriteTrigger.OnEnter;
+            // 
             // _lbConnectionStatus
             // 
             this._lbConnectionStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -393,6 +467,18 @@
             this._panelMain.Name = "_panelMain";
             this._panelMain.Size = new System.Drawing.Size(1274, 524);
             this._panelMain.TabIndex = 3;
+            // 
+            // panel14
+            // 
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.BackgroundImage = global::SunAutomation.Properties.Resources.Media;
+            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel14.Location = new System.Drawing.Point(233, 14);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(800, 496);
+            this.panel14.TabIndex = 21;
             // 
             // panel13
             // 
@@ -711,6 +797,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(1274, 1);
             this.panel11.TabIndex = 2;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // _panelBorderTop
             // 
@@ -731,92 +818,6 @@
             this._lineHighlight.Name = "_lineHighlight";
             this._lineHighlight.Size = new System.Drawing.Size(1274, 1);
             this._lineHighlight.TabIndex = 2;
-            // 
-            // panel14
-            // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel14.BackgroundImage = global::SunAutomation.Properties.Resources.Media;
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel14.Location = new System.Drawing.Point(233, 14);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(800, 496);
-            this.panel14.TabIndex = 21;
-            // 
-            // _txbTarget
-            // 
-            this._txbTarget.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._txbTarget.DropDownBackColor = System.Drawing.SystemColors.Control;
-            this._txbTarget.DropDownBorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._txbTarget.DropDownDirection = EasyScada.Winforms.Controls.DropDownDirection.None;
-            this._txbTarget.DropDownFont = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._txbTarget.DropDownForeColor = System.Drawing.SystemColors.ControlText;
-            this._txbTarget.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._txbTarget.HightLightStatusTime = 3;
-            this._txbTarget.Location = new System.Drawing.Point(840, 8);
-            this._txbTarget.Name = "_txbTarget";
-            this._txbTarget.Role = null;
-            this._txbTarget.Size = new System.Drawing.Size(129, 47);
-            this._txbTarget.StringFormat = null;
-            this._txbTarget.TabIndex = 13;
-            this._txbTarget.TagPath = "Local Station/Channel1/Device1/Target";
-            this._txbTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._txbTarget.WriteDelay = 200;
-            this._txbTarget.WriteTrigger = EasyScada.Core.WriteTrigger.OnEnter;
-            // 
-            // _btnDec1
-            // 
-            this._btnDec1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._btnDec1.Location = new System.Drawing.Point(776, 8);
-            this._btnDec1.Name = "_btnDec1";
-            this._btnDec1.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
-            this._btnDec1.Size = new System.Drawing.Size(58, 45);
-            this._btnDec1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._btnDec1.TabIndex = 14;
-            this._btnDec1.Values.Text = "-1 %";
-            this._btnDec1.Click += new System.EventHandler(this._btnDec1_Click);
-            // 
-            // _btnInc1
-            // 
-            this._btnInc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._btnInc1.Location = new System.Drawing.Point(975, 8);
-            this._btnInc1.Name = "_btnInc1";
-            this._btnInc1.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
-            this._btnInc1.Size = new System.Drawing.Size(58, 45);
-            this._btnInc1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._btnInc1.TabIndex = 15;
-            this._btnInc1.Values.Text = "+1 %";
-            this._btnInc1.Click += new System.EventHandler(this._btnInc1_Click);
-            // 
-            // _btnStop
-            // 
-            this._btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._btnStop.Location = new System.Drawing.Point(1166, 8);
-            this._btnStop.Name = "_btnStop";
-            this._btnStop.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
-            this._btnStop.Size = new System.Drawing.Size(98, 45);
-            this._btnStop.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._btnStop.TabIndex = 16;
-            this._btnStop.Values.Text = "Stop";
-            this._btnStop.Click += new System.EventHandler(this._btnStop_Click);
-            // 
-            // _btnStart
-            // 
-            this._btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._btnStart.Location = new System.Drawing.Point(1062, 8);
-            this._btnStart.Name = "_btnStart";
-            this._btnStart.PaletteMode = EasyScada.Winforms.Controls.PaletteMode.Office2007Silver;
-            this._btnStart.Size = new System.Drawing.Size(98, 45);
-            this._btnStart.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._btnStart.TabIndex = 17;
-            this._btnStart.Values.Text = "Start";
-            this._btnStart.Click += new System.EventHandler(this._btnStart_Click);
             // 
             // currentTimeControl1
             // 
@@ -841,6 +842,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Sun Automation";
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
             this._panelHeader.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -848,6 +850,7 @@
             this.panel2.ResumeLayout(false);
             this._panelBottom.ResumeLayout(false);
             this._panelBottom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).EndInit();
             this._panelMain.ResumeLayout(false);
             this._panelMain.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -866,7 +869,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel1)).EndInit();
             this._panelBorderBottom.ResumeLayout(false);
             this._panelBorderTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).EndInit();
             this.ResumeLayout(false);
 
         }

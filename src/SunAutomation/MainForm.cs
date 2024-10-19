@@ -219,7 +219,7 @@ namespace SunAutomation
                     MessageBox.Show("Mất kết nối với server", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
+                //
                 var tag = _easyDriverConnector.GetTag("Local Station/Channel1/Device1/Target");
                 if (tag == null)
                 {
@@ -285,6 +285,16 @@ namespace SunAutomation
             {
                 _isBusy = false;
             }
+        }
+
+        private void MainForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
