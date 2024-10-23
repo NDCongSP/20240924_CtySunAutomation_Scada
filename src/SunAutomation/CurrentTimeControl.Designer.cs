@@ -38,13 +38,13 @@
             // 
             this._lbCurrentDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._lbCurrentDate.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbCurrentDate.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lbCurrentDate.ForeColor = System.Drawing.Color.White;
-            this._lbCurrentDate.Location = new System.Drawing.Point(0, 0);
-            this._lbCurrentDate.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this._lbCurrentDate.Location = new System.Drawing.Point(0, 17);
+            this._lbCurrentDate.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this._lbCurrentDate.Name = "_lbCurrentDate";
-            this._lbCurrentDate.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this._lbCurrentDate.Size = new System.Drawing.Size(178, 33);
+            this._lbCurrentDate.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this._lbCurrentDate.Size = new System.Drawing.Size(280, 49);
             this._lbCurrentDate.TabIndex = 2;
             this._lbCurrentDate.Text = "2024-10-09";
             this._lbCurrentDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -53,13 +53,13 @@
             // 
             this._lbCurrentTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._lbCurrentTime.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbCurrentTime.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lbCurrentTime.ForeColor = System.Drawing.Color.White;
-            this._lbCurrentTime.Location = new System.Drawing.Point(0, 24);
-            this._lbCurrentTime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this._lbCurrentTime.Location = new System.Drawing.Point(0, 52);
+            this._lbCurrentTime.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this._lbCurrentTime.Name = "_lbCurrentTime";
-            this._lbCurrentTime.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this._lbCurrentTime.Size = new System.Drawing.Size(173, 33);
+            this._lbCurrentTime.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this._lbCurrentTime.Size = new System.Drawing.Size(272, 49);
             this._lbCurrentTime.TabIndex = 3;
             this._lbCurrentTime.Text = "16   :   21";
             this._lbCurrentTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -71,15 +71,15 @@
             // 
             // CurrentTimeControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
             this.Controls.Add(this._lbCurrentDate);
             this.Controls.Add(this._lbCurrentTime);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "CurrentTimeControl";
-            this.Size = new System.Drawing.Size(178, 88);
+            this.Size = new System.Drawing.Size(280, 129);
             this.ResumeLayout(false);
 
         }
