@@ -1,0 +1,722 @@
+{
+  "ItemType": 0,
+  "ServerAddress": "127.0.0.1",
+  "Port": 8800,
+  "CommunicationMode": 0,
+  "RefreshRate": 1000,
+  "CreatedDate": "2024-10-24T08:19:28.0734793+07:00",
+  "Username": null,
+  "Password": null,
+  "Childs": [
+    {
+      "ItemType": 1,
+      "Name": "Local Station",
+      "Path": "Local Station",
+      "Description": null,
+      "DisplayInfo": null,
+      "Error": null,
+      "ConnectionStatus": 1,
+      "Childs": [
+        {
+          "ItemType": 3,
+          "Name": "Channel1",
+          "Path": "Local Station/Channel1",
+          "Description": null,
+          "DisplayInfo": "ModbusTCP - 192.168.1.100:502",
+          "Error": null,
+          "ConnectionStatus": 0,
+          "Childs": [
+            {
+              "ItemType": 4,
+              "Name": "Device1",
+              "Path": "Local Station/Channel1/Device1",
+              "Description": null,
+              "DisplayInfo": "UnitId - 1",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "N1",
+                  "Path": "Local Station/Channel1/Device1/N1",
+                  "Description": "Motor speed. Unit: rpm. 0~999999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403000"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Wm",
+                  "Path": "Local Station/Channel1/Device1/Wm",
+                  "Description": "Motor input power. Unit kW. 0~9999.9",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403002"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Pd",
+                  "Path": "Local Station/Channel1/Device1/Pd",
+                  "Description": "Discharge pressure.  Unit : kgf/㎠ / kPa / PSI. 0~9999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403004"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "dPi",
+                  "Path": "Local Station/Channel1/Device1/dPi",
+                  "Description": "Inlet filter DP.  Unit : kgf/㎠ / kPa / PSI. 0~99.9999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403006"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Ts",
+                  "Path": "Local Station/Channel1/Device1/Ts",
+                  "Description": "Suction temperature. Unit : ℃ / ℉. 0~9999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403008"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Td",
+                  "Path": "Local Station/Channel1/Device1/Td",
+                  "Description": "Discharge temperature.Unit : ℃ / ℉. 0~9999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403010"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Tm",
+                  "Path": "Local Station/Channel1/Device1/Tm",
+                  "Description": "Motor temperature. Unit : ℃ / ℉. 0~9999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403012"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Tb",
+                  "Path": "Local Station/Channel1/Device1/Tb",
+                  "Description": "Bearing temperature. Unit : ℃ / ℉. 0~9999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403014"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Xm",
+                  "Path": "Local Station/Channel1/Device1/Xm",
+                  "Description": "Motor vibration. Unit : ㎛ / mil. 0~999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403016"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Q",
+                  "Path": "Local Station/Channel1/Device1/Q",
+                  "Description": "Suction air flow. Unit : ㎥/min / Ｎ㎥/min / Ｎ㎥/min(*) / CFM / SCFM. 0~99999.9",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403018"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Nc_max",
+                  "Path": "Local Station/Channel1/Device1/Nc_max",
+                  "Description": "Max speed based on Suction temperature. Unit : rpm / mg/. 0~999999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403020"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "B_status",
+                  "Path": "Local Station/Channel1/Device1/B_status",
+                  "Description": "Blower status. refer to page ‘C-12. 0~1000000",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403022"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Nscm",
+                  "Path": "Local Station/Channel1/Device1/Nscm",
+                  "Description": "Max speed limit condition. refer to page ‘C-16’. 0~100",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403023"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Ctrl_mode",
+                  "Path": "Local Station/Channel1/Device1/Ctrl_mode",
+                  "Description": "Control mode status. refer to page ‘C-13. 0~1000",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403024"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Site_mode",
+                  "Path": "Local Station/Channel1/Device1/Site_mode",
+                  "Description": "Remote mode status. refer to page ‘C-14’. 0~1000",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403025"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Surge_mode",
+                  "Path": "Local Station/Channel1/Device1/Surge_mode",
+                  "Description": "Protection mode status. refer to page ‘C-15’. 0~1000",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403026"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "T_run_min",
+                  "Path": "Local Station/Channel1/Device1/T_run_min",
+                  "Description": "Total running time. Unit : Minute. 0~60",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403027"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "T_run_hour",
+                  "Path": "Local Station/Channel1/Device1/T_run_hour",
+                  "Description": "Total running time. Unit : Hour. 0~4294967295",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403028"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "C_run_hour",
+                  "Path": "Local Station/Channel1/Device1/C_run_hour",
+                  "Description": "Current running time. Unit : Hour. 0~4294967295",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403030"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Ks",
+                  "Path": "Local Station/Channel1/Device1/Ks",
+                  "Description": "(Neuros only use)",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403032"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Qo",
+                  "Path": "Local Station/Channel1/Device1/Qo",
+                  "Description": "(Neuros only use)",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403034"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Ticr",
+                  "Path": "Local Station/Channel1/Device1/Ticr",
+                  "Description": "(Neuros only use)",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403038"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_order",
+                  "Path": "Local Station/Channel1/Device1/F_history_order",
+                  "Description": "Fault history number.  0~25",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403040"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_code",
+                  "Path": "Local Station/Channel1/Device1/F_history_code",
+                  "Description": "Fault history code. 0~9999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403042"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_value",
+                  "Path": "Local Station/Channel1/Device1/F_history_value",
+                  "Description": "Fault history value. 0~99999.999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403043"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_year",
+                  "Path": "Local Station/Channel1/Device1/F_history_year",
+                  "Description": "Fault history time. Unit : Year. 0~99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403044"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_month",
+                  "Path": "Local Station/Channel1/Device1/F_history_month",
+                  "Description": "Fault history time. Unit : Month. 0~12",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403045"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_day",
+                  "Path": "Local Station/Channel1/Device1/F_history_day",
+                  "Description": "Fault history time. Unit: day. 0~31",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403046"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_hour",
+                  "Path": "Local Station/Channel1/Device1/F_history_hour",
+                  "Description": "Fault history time. Unit : Hour. 0~24",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403047"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "F_history_min",
+                  "Path": "Local Station/Channel1/Device1/F_history_min",
+                  "Description": "Fault history time. Unit : Min. 0~60",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403048"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "N1_max",
+                  "Path": "Local Station/Channel1/Device1/N1_max",
+                  "Description": "Motor speed limit. Unit : rpm. 0~999999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403050"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Pi-max",
+                  "Path": "Local Station/Channel1/Device1/Pi-max",
+                  "Description": "Inlet filter DP limit. Unit : kgf/㎠ / kPa / PSI. 0~999.999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403052"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Xm_max",
+                  "Path": "Local Station/Channel1/Device1/Xm_max",
+                  "Description": "Moto vibration limit. Unit : ㎛ / mil. 0~999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403054"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Pd_max",
+                  "Path": "Local Station/Channel1/Device1/Pd_max",
+                  "Description": "Discharge pressure limit. Unit : kgf/㎠ / kPa / PSI. 0~9999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403056"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Ts_max",
+                  "Path": "Local Station/Channel1/Device1/Ts_max",
+                  "Description": "Suction temperature limit. Unit : ℃ / ℉. 0~9999.99",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403058"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Td_max",
+                  "Path": "Local Station/Channel1/Device1/Td_max",
+                  "Description": "Discharge temperature limit. 0~9999.99 Unit : ℃ / ℉",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403060"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Tm_max",
+                  "Path": "Local Station/Channel1/Device1/Tm_max",
+                  "Description": "Motor temperature limit REAL 0~9999.99 Unit : ℃ / ℉",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403062"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Tb_max",
+                  "Path": "Local Station/Channel1/Device1/Tb_max",
+                  "Description": "Bearing temperature limit REAL 0~9999.99 Unit : ℃ / ℉",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403064"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Vm_max",
+                  "Path": "Local Station/Channel1/Device1/Vm_max",
+                  "Description": "Motor input power limit REAL 0~9999.9 Unit : kW",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403066"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Ox",
+                  "Path": "Local Station/Channel1/Device1/Ox",
+                  "Description": "D.O(Dissolved oxygen) REAL 0~999.9 Unit : rpm / mg/ℓ",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403068"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Warning_code",
+                  "Path": "Local Station/Channel1/Device1/Warning_code",
+                  "Description": "Warning code INT 0~9999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403070"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Fault_code",
+                  "Path": "Local Station/Channel1/Device1/Fault_code",
+                  "Description": "Fault coed INT 0~9999",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403071"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Heart_bit",
+                  "Path": "Local Station/Channel1/Device1/Heart_bit",
+                  "Description": "Communication check bit BIT 0~1",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403072"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "N1_min",
+                  "Path": "Local Station/Channel1/Device1/N1_min",
+                  "Description": "Minimum speed REAL 0~999999.9 Unit : rpm",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403074"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Input_current",
+                  "Path": "Local Station/Channel1/Device1/Input_current",
+                  "Description": "Input current (Approx.). REAL 0~9999.99 Unit : A",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403076"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Taget",
+                  "Path": "Local Station/Channel1/Device1/Taget",
+                  "Description": "Percent of target value REAL 0~100.0 Unit : %",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "DWord",
+                    "Address": "403181"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Start_stop",
+                  "Path": "Local Station/Channel1/Device1/Start_stop",
+                  "Description": "Start / stop command INT 1234 / 4321 1234 : Start, 4321 : Stop",
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "403183"
+                  }
+                }
+              ],
+              "Properties": {
+                "UnitId": "1",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"403000\",\r\n    \"EndAddress\": \"403077\"\r\n  }\r\n]",
+                "MaxWritesCount": "10"
+              }
+            }
+          ],
+          "Properties": {
+            "IpAddress": "192.168.1.100",
+            "Port": "502",
+            "DelayBetweenPool": "5",
+            "ScanRate": "1000"
+          }
+        }
+      ],
+      "Properties": {}
+    }
+  ],
+  "Properties": {}
+}
