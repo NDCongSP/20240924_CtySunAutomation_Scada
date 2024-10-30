@@ -40,7 +40,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this._lbCurrentDate.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lbCurrentDate.ForeColor = System.Drawing.Color.White;
-            this._lbCurrentDate.Location = new System.Drawing.Point(0, 17);
+            this._lbCurrentDate.Location = new System.Drawing.Point(0, 10);
             this._lbCurrentDate.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this._lbCurrentDate.Name = "_lbCurrentDate";
             this._lbCurrentDate.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
@@ -55,13 +55,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this._lbCurrentTime.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._lbCurrentTime.ForeColor = System.Drawing.Color.White;
-            this._lbCurrentTime.Location = new System.Drawing.Point(0, 52);
+            this._lbCurrentTime.Location = new System.Drawing.Point(0, 57);
             this._lbCurrentTime.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this._lbCurrentTime.Name = "_lbCurrentTime";
             this._lbCurrentTime.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this._lbCurrentTime.Size = new System.Drawing.Size(272, 49);
             this._lbCurrentTime.TabIndex = 3;
-            this._lbCurrentTime.Text = "16   :   21";
+            this._lbCurrentTime.Text = "16   :   21 :  00";
             this._lbCurrentTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timer1
@@ -77,7 +77,7 @@
             this.Controls.Add(this._lbCurrentDate);
             this.Controls.Add(this._lbCurrentTime);
             this.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CurrentTimeControl";
             this.Size = new System.Drawing.Size(280, 129);
             this.ResumeLayout(false);

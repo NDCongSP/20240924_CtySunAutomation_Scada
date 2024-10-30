@@ -4,7 +4,7 @@
   "Port": 8800,
   "CommunicationMode": 0,
   "RefreshRate": 1000,
-  "CreatedDate": "2024-10-24T08:19:28.0734793+07:00",
+  "CreatedDate": "2024-10-30T10:37:59.7558124+07:00",
   "Username": null,
   "Password": null,
   "Childs": [
@@ -667,8 +667,8 @@
                 },
                 {
                   "ItemType": 6,
-                  "Name": "Taget",
-                  "Path": "Local Station/Channel1/Device1/Taget",
+                  "Name": "Target",
+                  "Path": "Local Station/Channel1/Device1/Target",
                   "Description": "Percent of target value REAL 0~100.0 Unit : %",
                   "DisplayInfo": null,
                   "Error": null,

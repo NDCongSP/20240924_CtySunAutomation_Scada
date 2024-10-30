@@ -47,7 +47,7 @@ namespace SunAutomation
         {
             var now = DateTime.Now;
             _lbCurrentDate.Text = $"{now:yyyy-MM-dd}";
-            _lbCurrentTime.Text = $"{now:HH}   :   {now:mm}";
+            _lbCurrentTime.Text = $"{now:HH}   :   {now:mm}:   {now:ss}";
         }
     }
 }
