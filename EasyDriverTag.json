@@ -1462,7 +1462,10 @@
   "ParameterContainer": {
   "DisplayName": null,
   "DisplayParameters": null,
-  "Parameters": {}
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "403183"
+  }
 },
   "Address": "403183",
   "DataTypeName": "Word",
