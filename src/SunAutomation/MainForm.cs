@@ -32,6 +32,7 @@ namespace SunAutomation
             _easyDriverConnector.EndInit();
             _lbStatus.Text = _easyDriverConnector.ConnectionStatus.ToString();
 
+
             Load += MainForm_Load;
 
             _btnMain.Click += _btnMain_Click;
@@ -48,13 +49,16 @@ namespace SunAutomation
                 {
                     _lbConnectionStatus.Text = e.NewStatus.ToString();
                     _lbConnectionStatus.ForeColor = GetConnectionStatusColor(e.NewStatus);
+                    _lbStatus.Text = _easyDriverConnector.ConnectionStatus.ToString();
                 }));
             }
             else
             {
                 _lbConnectionStatus.Text = e.NewStatus.ToString();
                 _lbConnectionStatus.ForeColor = GetConnectionStatusColor(e.NewStatus);
-            }           
+                _lbStatus.Text = _easyDriverConnector.ConnectionStatus.ToString();
+
+            }
         }
 
         private Color GetConnectionStatusColor(ConnectionStatus status)

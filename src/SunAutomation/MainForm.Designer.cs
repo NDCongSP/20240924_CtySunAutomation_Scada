@@ -44,53 +44,53 @@
             this._panelBorderBottom = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.easyLabel6 = new EasyScada.Winforms.Controls.EasyLabel();
-            this.label19 = new System.Windows.Forms.Label();
             this.easyLabel7 = new EasyScada.Winforms.Controls.EasyLabel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.easyLabel6 = new EasyScada.Winforms.Controls.EasyLabel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.easyLabel1 = new EasyScada.Winforms.Controls.EasyLabel();
             this.label3 = new System.Windows.Forms.Label();
+            this.easyLabel1 = new EasyScada.Winforms.Controls.EasyLabel();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.easyLabel2 = new EasyScada.Winforms.Controls.EasyLabel();
             this.label10 = new System.Windows.Forms.Label();
+            this.easyLabel2 = new EasyScada.Winforms.Controls.EasyLabel();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.easyLabel3 = new EasyScada.Winforms.Controls.EasyLabel();
-            this.label24 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.easyLabel3 = new EasyScada.Winforms.Controls.EasyLabel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.easyLabel4 = new EasyScada.Winforms.Controls.EasyLabel();
-            this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.easyLabel4 = new EasyScada.Winforms.Controls.EasyLabel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.easyLabel9 = new EasyScada.Winforms.Controls.EasyLabel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.easyLabel8 = new EasyScada.Winforms.Controls.EasyLabel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this._panelMain = new System.Windows.Forms.Panel();
             this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this._lbStatus = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this._panelHeader = new System.Windows.Forms.Panel();
             this._panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).BeginInit();
             this._panelBorderTop.SuspendLayout();
             this._panelBorderBottom.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.easyLabel6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyLabel6)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel1)).BeginInit();
             this.panel16.SuspendLayout();
@@ -329,58 +329,6 @@
             this.panel10.Size = new System.Drawing.Size(591, 286);
             this.panel10.TabIndex = 18;
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(22, 6);
-            this.label18.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(231, 47);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Motor speed";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(477, 108);
-            this.label17.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 40);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "rpm";
-            // 
-            // easyLabel6
-            // 
-            this.easyLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.easyLabel6.BackColor = System.Drawing.Color.Black;
-            this.easyLabel6.DisplayMode = EasyScada.Winforms.Controls.DisplayMode.Value;
-            this.easyLabel6.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.easyLabel6.ForeColor = System.Drawing.Color.Lime;
-            this.easyLabel6.Location = new System.Drawing.Point(20, 53);
-            this.easyLabel6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.easyLabel6.Name = "easyLabel6";
-            this.easyLabel6.Size = new System.Drawing.Size(442, 95);
-            this.easyLabel6.StringFormat = null;
-            this.easyLabel6.TabIndex = 8;
-            this.easyLabel6.TagPath = "Local Station/Channel1/Device1/N1";
-            this.easyLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(477, 218);
-            this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 40);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "%";
-            // 
             // easyLabel7
             // 
             this.easyLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -399,6 +347,58 @@
             this.easyLabel7.Text = "??";
             this.easyLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(477, 218);
+            this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 40);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "%";
+            // 
+            // easyLabel6
+            // 
+            this.easyLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.easyLabel6.BackColor = System.Drawing.Color.Black;
+            this.easyLabel6.DisplayMode = EasyScada.Winforms.Controls.DisplayMode.Value;
+            this.easyLabel6.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.easyLabel6.ForeColor = System.Drawing.Color.Lime;
+            this.easyLabel6.Location = new System.Drawing.Point(20, 53);
+            this.easyLabel6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.easyLabel6.Name = "easyLabel6";
+            this.easyLabel6.Size = new System.Drawing.Size(442, 95);
+            this.easyLabel6.StringFormat = null;
+            this.easyLabel6.TabIndex = 8;
+            this.easyLabel6.TagPath = "Local Station/Channel1/Device1/N1";
+            this.easyLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(477, 108);
+            this.label17.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(69, 40);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "rpm";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(22, 6);
+            this.label18.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(231, 47);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "Motor speed";
+            // 
             // panel15
             // 
             this.panel15.Controls.Add(this.label3);
@@ -409,17 +409,16 @@
             this.panel15.Size = new System.Drawing.Size(523, 156);
             this.panel15.TabIndex = 22;
             // 
-            // label9
+            // label3
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(381, 106);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 45);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "kgf/cm2";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(5, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(332, 47);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Discharge Pressure";
             // 
             // easyLabel1
             // 
@@ -439,16 +438,17 @@
             this.easyLabel1.Text = "0";
             this.easyLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label3
+            // label9
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 9);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(332, 47);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Discharge Pressure";
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(381, 106);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(137, 45);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "kgf/cm2";
             // 
             // panel16
             // 
@@ -460,17 +460,16 @@
             this.panel16.Size = new System.Drawing.Size(523, 156);
             this.panel16.TabIndex = 23;
             // 
-            // label16
+            // label10
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(381, 106);
-            this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 45);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "°C";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(5, 9);
+            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(293, 47);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Discharge Temp.";
             // 
             // easyLabel2
             // 
@@ -489,16 +488,17 @@
             this.easyLabel2.TagPath = "Local Station/Channel1/Device1/Td";
             this.easyLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label10
+            // label16
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(5, 9);
-            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(293, 47);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Discharge Temp.";
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(381, 106);
+            this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(52, 45);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "°C";
             // 
             // panel17
             // 
@@ -509,6 +509,29 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(523, 156);
             this.panel17.TabIndex = 24;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(5, 9);
+            this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(302, 47);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Suction flow rate";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(381, 106);
+            this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(131, 45);
+            this.label24.TabIndex = 4;
+            this.label24.Text = "m3/min";
             // 
             // easyLabel3
             // 
@@ -527,29 +550,6 @@
             this.easyLabel3.TagPath = "Local Station/Channel1/Device1/Q";
             this.easyLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(381, 106);
-            this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(131, 45);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "m3/min";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(5, 9);
-            this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(302, 47);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "Suction flow rate";
-            // 
             // panel18
             // 
             this.panel18.Controls.Add(this.label25);
@@ -559,6 +559,29 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(523, 156);
             this.panel18.TabIndex = 25;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(5, 9);
+            this.label25.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(254, 47);
+            this.label25.TabIndex = 6;
+            this.label25.Text = "Suction Temp.";
+            // 
+            // label26
+            // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(381, 106);
+            this.label26.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(52, 45);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "°C";
             // 
             // easyLabel4
             // 
@@ -577,29 +600,6 @@
             this.easyLabel4.TagPath = "Local Station/Channel1/Device1/Ts";
             this.easyLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label26
-            // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(381, 106);
-            this.label26.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(52, 45);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "°C";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(5, 9);
-            this.label25.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(254, 47);
-            this.label25.TabIndex = 6;
-            this.label25.Text = "Suction Temp.";
-            // 
             // panel12
             // 
             this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -611,29 +611,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(591, 167);
             this.panel12.TabIndex = 19;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(20, 4);
-            this.label22.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(336, 47);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "Motor input power";
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(477, 106);
-            this.label21.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(58, 40);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "kW";
             // 
             // easyLabel9
             // 
@@ -652,6 +629,29 @@
             this.easyLabel9.TagPath = "Local Station/Channel1/Device1/Wm";
             this.easyLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(477, 106);
+            this.label21.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(58, 40);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "kW";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(20, 4);
+            this.label22.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(336, 47);
+            this.label22.TabIndex = 6;
+            this.label22.Text = "Motor input power";
+            // 
             // panel13
             // 
             this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -663,29 +663,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(591, 170);
             this.panel13.TabIndex = 20;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(20, 4);
-            this.label23.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(243, 47);
-            this.label23.TabIndex = 6;
-            this.label23.Text = "Inlet filter DP";
-            // 
-            // label20
-            // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(478, 106);
-            this.label20.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(122, 40);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "kgf/cm2";
             // 
             // easyLabel8
             // 
@@ -703,6 +680,29 @@
             this.easyLabel8.TabIndex = 8;
             this.easyLabel8.TagPath = "Local Station/Channel1/Device1/dPi";
             this.easyLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(478, 106);
+            this.label20.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(122, 40);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "kgf/cm2";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(20, 4);
+            this.label23.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(243, 47);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "Inlet filter DP";
             // 
             // _panelMain
             // 
@@ -756,16 +756,6 @@
             this.panel2.Size = new System.Drawing.Size(216, 88);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(3, 88);
-            this.panel3.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -776,8 +766,18 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 88);
             this.label1.TabIndex = 3;
-            this.label1.Text = "NX150-060";
+            this.label1.Text = "NX300-C100";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(3, 88);
+            this.panel3.TabIndex = 2;
             // 
             // panel4
             // 
@@ -790,29 +790,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(537, 88);
             this.panel4.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 88);
-            this.panel5.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(10, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 88);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "   Status";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _lbStatus
             // 
@@ -829,6 +806,29 @@
             this._lbStatus.TabIndex = 4;
             this._lbStatus.Text = "??";
             this._lbStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(10, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 88);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "   Status";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 88);
+            this.panel5.TabIndex = 2;
             // 
             // _panelHeader
             // 
@@ -866,8 +866,8 @@
             this._panelBorderBottom.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.easyLabel6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easyLabel6)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel1)).EndInit();
