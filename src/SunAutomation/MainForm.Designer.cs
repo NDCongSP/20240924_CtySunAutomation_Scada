@@ -44,8 +44,6 @@
             this._panelBorderBottom = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.easyLabel7 = new EasyScada.Winforms.Controls.EasyLabel();
-            this.label19 = new System.Windows.Forms.Label();
             this.easyLabel6 = new EasyScada.Winforms.Controls.EasyLabel();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -89,7 +87,6 @@
             this._panelBorderTop.SuspendLayout();
             this._panelBorderBottom.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.easyLabel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel6)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel1)).BeginInit();
@@ -318,8 +315,6 @@
             // panel10
             // 
             this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.Controls.Add(this.easyLabel7);
-            this.panel10.Controls.Add(this.label19);
             this.panel10.Controls.Add(this.easyLabel6);
             this.panel10.Controls.Add(this.label17);
             this.panel10.Controls.Add(this.label18);
@@ -328,36 +323,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(591, 286);
             this.panel10.TabIndex = 18;
-            // 
-            // easyLabel7
-            // 
-            this.easyLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.easyLabel7.BackColor = System.Drawing.Color.Black;
-            this.easyLabel7.DisplayMode = EasyScada.Winforms.Controls.DisplayMode.Value;
-            this.easyLabel7.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.easyLabel7.ForeColor = System.Drawing.Color.Lime;
-            this.easyLabel7.Location = new System.Drawing.Point(20, 163);
-            this.easyLabel7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.easyLabel7.Name = "easyLabel7";
-            this.easyLabel7.Size = new System.Drawing.Size(442, 95);
-            this.easyLabel7.StringFormat = null;
-            this.easyLabel7.TabIndex = 10;
-            this.easyLabel7.TagPath = "";
-            this.easyLabel7.Text = "??";
-            this.easyLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(477, 218);
-            this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 40);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "%";
             // 
             // easyLabel6
             // 
@@ -866,7 +831,6 @@
             this._panelBorderBottom.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.easyLabel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.easyLabel6)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
@@ -911,8 +875,6 @@
         private System.Windows.Forms.Panel _panelBorderBottom;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
-        private EasyScada.Winforms.Controls.EasyLabel easyLabel7;
-        private System.Windows.Forms.Label label19;
         private EasyScada.Winforms.Controls.EasyLabel easyLabel6;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
