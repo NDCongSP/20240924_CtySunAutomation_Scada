@@ -339,7 +339,7 @@
             this.easyLabel6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel6.Name = "easyLabel6";
             this.easyLabel6.Size = new System.Drawing.Size(442, 95);
-            this.easyLabel6.StringFormat = null;
+            this.easyLabel6.StringFormat = "d";
             this.easyLabel6.TabIndex = 8;
             this.easyLabel6.TagPath = "Local Station/Channel1/Device1/N1";
             this.easyLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

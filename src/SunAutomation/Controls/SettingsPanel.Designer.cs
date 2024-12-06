@@ -259,7 +259,7 @@
             this.easyTextBox2.ReadOnly = true;
             this.easyTextBox2.Role = null;
             this.easyTextBox2.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox2.StringFormat = null;
+            this.easyTextBox2.StringFormat = "d";
             this.easyTextBox2.TabIndex = 3;
             this.easyTextBox2.TagPath = "Local Station/Channel1/Device1/N1_max";
             this.easyTextBox2.Text = "easyTextBox2";
@@ -285,7 +285,7 @@
             this.easyLabel1.Location = new System.Drawing.Point(860, 0);
             this.easyLabel1.Name = "easyLabel1";
             this.easyLabel1.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel1.StringFormat = null;
+            this.easyLabel1.StringFormat = "d";
             this.easyLabel1.TabIndex = 8;
             this.easyLabel1.TagPath = "Local Station/Channel1/Device1/N1_max";
             this.easyLabel1.Text = "00000";
@@ -405,7 +405,7 @@
             this.easyTextBox1.ReadOnly = true;
             this.easyTextBox1.Role = null;
             this.easyTextBox1.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox1.StringFormat = null;
+            this.easyTextBox1.StringFormat = "d";
             this.easyTextBox1.TabIndex = 3;
             this.easyTextBox1.TagPath = "Local Station/Channel1/Device1/N1_min";
             this.easyTextBox1.Text = "easyTextBox1";
@@ -431,7 +431,7 @@
             this.easyLabel2.Location = new System.Drawing.Point(860, 0);
             this.easyLabel2.Name = "easyLabel2";
             this.easyLabel2.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel2.StringFormat = null;
+            this.easyLabel2.StringFormat = "d";
             this.easyLabel2.TabIndex = 8;
             this.easyLabel2.TagPath = "Local Station/Channel1/Device1/N1_min";
             this.easyLabel2.Text = "easyLabel2";
@@ -697,7 +697,7 @@
             this.easyTextBox4.ReadOnly = true;
             this.easyTextBox4.Role = null;
             this.easyTextBox4.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox4.StringFormat = null;
+            this.easyTextBox4.StringFormat = "f4";
             this.easyTextBox4.TabIndex = 3;
             this.easyTextBox4.TagPath = "Local Station/Channel1/Device1/Pi-max";
             this.easyTextBox4.Text = "easyTextBox4";
@@ -723,7 +723,7 @@
             this.easyLabel4.Location = new System.Drawing.Point(860, 0);
             this.easyLabel4.Name = "easyLabel4";
             this.easyLabel4.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel4.StringFormat = null;
+            this.easyLabel4.StringFormat = "f4";
             this.easyLabel4.TabIndex = 8;
             this.easyLabel4.TagPath = "Local Station/Channel1/Device1/Pi-max";
             this.easyLabel4.Text = "easyLabel4";
@@ -843,7 +843,7 @@
             this.easyTextBox5.ReadOnly = true;
             this.easyTextBox5.Role = null;
             this.easyTextBox5.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox5.StringFormat = null;
+            this.easyTextBox5.StringFormat = "f2";
             this.easyTextBox5.TabIndex = 3;
             this.easyTextBox5.TagPath = "Local Station/Channel1/Device1/Pd_max";
             this.easyTextBox5.Text = "easyTextBox5";
@@ -869,7 +869,7 @@
             this.easyLabel5.Location = new System.Drawing.Point(860, 0);
             this.easyLabel5.Name = "easyLabel5";
             this.easyLabel5.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel5.StringFormat = null;
+            this.easyLabel5.StringFormat = "f2";
             this.easyLabel5.TabIndex = 8;
             this.easyLabel5.TagPath = "Local Station/Channel1/Device1/Pd_max";
             this.easyLabel5.Text = "easyLabel5";
@@ -989,7 +989,7 @@
             this.easyTextBox6.ReadOnly = true;
             this.easyTextBox6.Role = null;
             this.easyTextBox6.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox6.StringFormat = null;
+            this.easyTextBox6.StringFormat = "f1";
             this.easyTextBox6.TabIndex = 3;
             this.easyTextBox6.TagPath = "Local Station/Channel1/Device1/Ts_max";
             this.easyTextBox6.Text = "easyTextBox6";
@@ -1015,7 +1015,7 @@
             this.easyLabel6.Location = new System.Drawing.Point(860, 0);
             this.easyLabel6.Name = "easyLabel6";
             this.easyLabel6.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel6.StringFormat = null;
+            this.easyLabel6.StringFormat = "f1";
             this.easyLabel6.TabIndex = 8;
             this.easyLabel6.TagPath = "Local Station/Channel1/Device1/Ts_max";
             this.easyLabel6.Text = "easyLabel6";
@@ -1135,7 +1135,7 @@
             this.easyTextBox7.ReadOnly = true;
             this.easyTextBox7.Role = null;
             this.easyTextBox7.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox7.StringFormat = null;
+            this.easyTextBox7.StringFormat = "f1";
             this.easyTextBox7.TabIndex = 3;
             this.easyTextBox7.TagPath = "Local Station/Channel1/Device1/Td_max";
             this.easyTextBox7.Text = "easyTextBox7";
@@ -1161,7 +1161,7 @@
             this.easyLabel7.Location = new System.Drawing.Point(860, 0);
             this.easyLabel7.Name = "easyLabel7";
             this.easyLabel7.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel7.StringFormat = null;
+            this.easyLabel7.StringFormat = "f1";
             this.easyLabel7.TabIndex = 8;
             this.easyLabel7.TagPath = "Local Station/Channel1/Device1/Td_max";
             this.easyLabel7.Text = "easyLabel7";
@@ -1281,7 +1281,7 @@
             this.easyTextBox8.ReadOnly = true;
             this.easyTextBox8.Role = null;
             this.easyTextBox8.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox8.StringFormat = null;
+            this.easyTextBox8.StringFormat = "f1";
             this.easyTextBox8.TabIndex = 3;
             this.easyTextBox8.TagPath = "Local Station/Channel1/Device1/Tm_max";
             this.easyTextBox8.Text = "easyTextBox8";
@@ -1307,7 +1307,7 @@
             this.easyLabel8.Location = new System.Drawing.Point(860, 0);
             this.easyLabel8.Name = "easyLabel8";
             this.easyLabel8.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel8.StringFormat = null;
+            this.easyLabel8.StringFormat = "f1";
             this.easyLabel8.TabIndex = 8;
             this.easyLabel8.TagPath = "Local Station/Channel1/Device1/Tm_max";
             this.easyLabel8.Text = "easyLabel8";
@@ -1427,7 +1427,7 @@
             this.easyTextBox9.ReadOnly = true;
             this.easyTextBox9.Role = null;
             this.easyTextBox9.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox9.StringFormat = null;
+            this.easyTextBox9.StringFormat = "f1";
             this.easyTextBox9.TabIndex = 3;
             this.easyTextBox9.TagPath = "Local Station/Channel1/Device1/Tb_max";
             this.easyTextBox9.Text = "easyTextBox9";
@@ -1453,7 +1453,7 @@
             this.easyLabel9.Location = new System.Drawing.Point(860, 0);
             this.easyLabel9.Name = "easyLabel9";
             this.easyLabel9.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel9.StringFormat = null;
+            this.easyLabel9.StringFormat = "f1";
             this.easyLabel9.TabIndex = 8;
             this.easyLabel9.TagPath = "Local Station/Channel1/Device1/Tb_max";
             this.easyLabel9.Text = "easyLabel9";
@@ -1573,7 +1573,7 @@
             this.easyTextBox10.ReadOnly = true;
             this.easyTextBox10.Role = null;
             this.easyTextBox10.Size = new System.Drawing.Size(201, 50);
-            this.easyTextBox10.StringFormat = null;
+            this.easyTextBox10.StringFormat = "f1";
             this.easyTextBox10.TabIndex = 3;
             this.easyTextBox10.TagPath = "Local Station/Channel1/Device1/Vm_max";
             this.easyTextBox10.Text = "easyTextBox10";
@@ -1599,7 +1599,7 @@
             this.easyLabel10.Location = new System.Drawing.Point(860, 0);
             this.easyLabel10.Name = "easyLabel10";
             this.easyLabel10.Size = new System.Drawing.Size(200, 69);
-            this.easyLabel10.StringFormat = null;
+            this.easyLabel10.StringFormat = "f1";
             this.easyLabel10.TabIndex = 8;
             this.easyLabel10.TagPath = "Local Station/Channel1/Device1/Vm_max";
             this.easyLabel10.Text = "easyLabel10";
