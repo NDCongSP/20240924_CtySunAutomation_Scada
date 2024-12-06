@@ -82,8 +82,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this._panelHeader = new System.Windows.Forms.Panel();
-            this._labWarningCode = new System.Windows.Forms.Label();
             this._labFaultCode = new System.Windows.Forms.Label();
+            this._labWarningCode = new System.Windows.Forms.Label();
+            this._labRunningStop = new System.Windows.Forms.Label();
             this._panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).BeginInit();
             this._panelBorderTop.SuspendLayout();
@@ -138,7 +139,7 @@
             this._btnStart.Size = new System.Drawing.Size(154, 91);
             this._btnStart.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._btnStart.TabIndex = 17;
-            this._btnStart.Values.Text = "Running";
+            this._btnStart.Values.Text = "Start";
             this._btnStart.Click += new System.EventHandler(this._btnStart_Click);
             // 
             // _btnStop
@@ -167,7 +168,6 @@
             this._btnInc1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._btnInc1.TabIndex = 15;
             this._btnInc1.Values.Text = "+1 %";
-            this._btnInc1.Visible = false;
             this._btnInc1.Click += new System.EventHandler(this._btnInc1_Click);
             // 
             // _btnDec1
@@ -182,7 +182,6 @@
             this._btnDec1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._btnDec1.TabIndex = 14;
             this._btnDec1.Values.Text = "-1 %";
-            this._btnDec1.Visible = false;
             this._btnDec1.Click += new System.EventHandler(this._btnDec1_Click);
             // 
             // _txbTarget
@@ -205,7 +204,6 @@
             this._txbTarget.TabIndex = 13;
             this._txbTarget.TagPath = "Local Station/Channel1/Device1/Target";
             this._txbTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._txbTarget.Visible = false;
             this._txbTarget.WriteDelay = 200;
             this._txbTarget.WriteTrigger = EasyScada.Core.WriteTrigger.OnEnter;
             // 
@@ -803,6 +801,7 @@
             // _panelHeader
             // 
             this._panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
+            this._panelHeader.Controls.Add(this._labRunningStop);
             this._panelHeader.Controls.Add(this._labFaultCode);
             this._panelHeader.Controls.Add(this._labWarningCode);
             this._panelHeader.Controls.Add(this.panel4);
@@ -816,25 +815,35 @@
             this._panelHeader.Size = new System.Drawing.Size(1924, 88);
             this._panelHeader.TabIndex = 0;
             // 
+            // _labFaultCode
+            // 
+            this._labFaultCode.BackColor = System.Drawing.Color.White;
+            this._labFaultCode.Location = new System.Drawing.Point(896, 47);
+            this._labFaultCode.Name = "_labFaultCode";
+            this._labFaultCode.Size = new System.Drawing.Size(243, 29);
+            this._labFaultCode.TabIndex = 6;
+            this._labFaultCode.Text = "Fault_code";
+            this._labFaultCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // _labWarningCode
             // 
             this._labWarningCode.BackColor = System.Drawing.Color.White;
-            this._labWarningCode.Location = new System.Drawing.Point(435, 21);
+            this._labWarningCode.Location = new System.Drawing.Point(896, 9);
             this._labWarningCode.Name = "_labWarningCode";
-            this._labWarningCode.Size = new System.Drawing.Size(243, 46);
+            this._labWarningCode.Size = new System.Drawing.Size(243, 29);
             this._labWarningCode.TabIndex = 5;
             this._labWarningCode.Text = "Warning_code";
             this._labWarningCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // _labFaultCode
+            // _labRunningStop
             // 
-            this._labFaultCode.BackColor = System.Drawing.Color.White;
-            this._labFaultCode.Location = new System.Drawing.Point(715, 21);
-            this._labFaultCode.Name = "_labFaultCode";
-            this._labFaultCode.Size = new System.Drawing.Size(243, 46);
-            this._labFaultCode.TabIndex = 6;
-            this._labFaultCode.Text = "Fault_code";
-            this._labFaultCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._labRunningStop.BackColor = System.Drawing.Color.White;
+            this._labRunningStop.Location = new System.Drawing.Point(245, 26);
+            this._labRunningStop.Name = "_labRunningStop";
+            this._labRunningStop.Size = new System.Drawing.Size(243, 29);
+            this._labRunningStop.TabIndex = 7;
+            this._labRunningStop.Text = "Running/Stop";
+            this._labRunningStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
@@ -942,6 +951,7 @@
         private System.Windows.Forms.Panel _panelHeader;
         private System.Windows.Forms.Label _labFaultCode;
         private System.Windows.Forms.Label _labWarningCode;
+        private System.Windows.Forms.Label _labRunningStop;
     }
 }
 

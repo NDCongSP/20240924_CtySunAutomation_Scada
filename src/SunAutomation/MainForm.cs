@@ -32,7 +32,6 @@ namespace SunAutomation
             _easyDriverConnector.EndInit();
             _lbStatus.Text = _easyDriverConnector.ConnectionStatus.ToString();
 
-
             Load += MainForm_Load;
 
             _btnMain.Click += _btnMain_Click;
@@ -47,6 +46,7 @@ namespace SunAutomation
         {
             _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code").ValueChanged += WarningCode_ValueChanged;
             _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code").ValueChanged += FaultCode_ValueChanged;
+            _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Start_stop").ValueChanged += StartStop_ValueChanged;
 
             WarningCode_ValueChanged(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code")
                     , new TagValueChangedEventArgs(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code")
@@ -54,6 +54,40 @@ namespace SunAutomation
             FaultCode_ValueChanged(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code")
                     , new TagValueChangedEventArgs(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code")
                     , "", _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code").Value));
+
+            StartStop_ValueChanged(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Start_stop")
+                    , new TagValueChangedEventArgs(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Start_stop")
+                    , "", _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Start_stop").Value));
+        }
+
+        private void StartStop_ValueChanged(object sender, TagValueChangedEventArgs e)
+        {
+            try
+            {
+                if (e.NewValue == "1234")
+                {
+                    if (_labWarningCode.InvokeRequired)
+                    {
+                        _labRunningStop.Text = "Running";
+                    }
+                    else
+                    {
+                        _labRunningStop.Text = "Running";
+                    }
+                }
+                else
+                {
+                    if (_labWarningCode.InvokeRequired)
+                    {
+                        _labRunningStop.Text = "Stop";
+                    }
+                    else
+                    {
+                        _labRunningStop.Text = "Stop";
+                    }
+                }
+            }
+            catch { }
         }
 
         private void _easyDriverConnector_ConnectionStatusChaged(object sender, ConnectionStatusChangedEventArgs e)
@@ -85,10 +119,12 @@ namespace SunAutomation
                     if (_labWarningCode.InvokeRequired)
                     {
                         _labWarningCode.BackColor = Color.White;
+                        _labWarningCode.Text = $"Warning Code = {e.NewValue}";
                     }
                     else
                     {
                         _labWarningCode.BackColor=Color.White;
+                        _labWarningCode.Text = $"Warning Code = {e.NewValue}";
                     }
                 }
                 else
@@ -96,10 +132,12 @@ namespace SunAutomation
                     if (_labWarningCode.InvokeRequired)
                     {
                         _labWarningCode.BackColor = Color.Yellow;
+                        _labWarningCode.Text = $"Warning Code = {e.NewValue}";
                     }
                     else
                     {
                         _labWarningCode.BackColor = Color.Yellow;
+                        _labWarningCode.Text = $"Warning Code = {e.NewValue}";
                     }
                 }
             }
@@ -114,10 +152,12 @@ namespace SunAutomation
                     if (_labFaultCode.InvokeRequired)
                     {
                         _labFaultCode.BackColor = Color.White;
+                        _labFaultCode.Text = $"Fault Code = {e.NewValue}";
                     }
                     else
                     {
                         _labFaultCode.BackColor = Color.White;
+                        _labFaultCode.Text = $"Fault Code = {e.NewValue}";
                     }
                 }
                 else
@@ -125,10 +165,12 @@ namespace SunAutomation
                     if (_labFaultCode.InvokeRequired)
                     {
                         _labFaultCode.BackColor = Color.Yellow;
+                        _labFaultCode.Text = $"Fault Code = {e.NewValue}";
                     }
                     else
                     {
                         _labFaultCode.BackColor = Color.Yellow;
+                        _labFaultCode.Text = $"Fault Code = {e.NewValue}";
                     }
                 }
             }
