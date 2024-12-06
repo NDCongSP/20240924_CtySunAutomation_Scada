@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this._panelBottom = new System.Windows.Forms.Panel();
             this._btnStart = new EasyScada.Winforms.Controls.ThemedButton();
             this._btnStop = new EasyScada.Winforms.Controls.ThemedButton();
@@ -84,7 +85,9 @@
             this._labRunningStop = new System.Windows.Forms.Label();
             this._labFaultCode = new System.Windows.Forms.Label();
             this._labWarningCode = new System.Windows.Forms.Label();
-            this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
+            this._lbCurrentDate = new System.Windows.Forms.Label();
+            this._lbCurrentTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this._panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).BeginInit();
             this._panelBorderTop.SuspendLayout();
@@ -339,7 +342,7 @@
             this.easyLabel6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel6.Name = "easyLabel6";
             this.easyLabel6.Size = new System.Drawing.Size(442, 95);
-            this.easyLabel6.StringFormat = "d";
+            this.easyLabel6.StringFormat = "f0";
             this.easyLabel6.TabIndex = 8;
             this.easyLabel6.TagPath = "Local Station/Channel1/Device1/N1";
             this.easyLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -695,7 +698,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(222, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(3, 88);
@@ -789,13 +792,14 @@
             // _panelHeader
             // 
             this._panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
+            this._panelHeader.Controls.Add(this._lbCurrentDate);
             this._panelHeader.Controls.Add(this._labRunningStop);
             this._panelHeader.Controls.Add(this._labFaultCode);
             this._panelHeader.Controls.Add(this._labWarningCode);
             this._panelHeader.Controls.Add(this.panel4);
             this._panelHeader.Controls.Add(this.panel2);
             this._panelHeader.Controls.Add(this.panel1);
-            this._panelHeader.Controls.Add(this.currentTimeControl1);
+            this._panelHeader.Controls.Add(this._lbCurrentTime);
             this._panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this._panelHeader.Location = new System.Drawing.Point(0, 0);
             this._panelHeader.Margin = new System.Windows.Forms.Padding(6);
@@ -806,9 +810,10 @@
             // _labRunningStop
             // 
             this._labRunningStop.BackColor = System.Drawing.Color.White;
-            this._labRunningStop.Location = new System.Drawing.Point(245, 26);
+            this._labRunningStop.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._labRunningStop.Location = new System.Drawing.Point(302, 12);
             this._labRunningStop.Name = "_labRunningStop";
-            this._labRunningStop.Size = new System.Drawing.Size(243, 29);
+            this._labRunningStop.Size = new System.Drawing.Size(284, 64);
             this._labRunningStop.TabIndex = 7;
             this._labRunningStop.Text = "Running/Stop";
             this._labRunningStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -833,16 +838,39 @@
             this._labWarningCode.Text = "Warning_code";
             this._labWarningCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // currentTimeControl1
+            // _lbCurrentDate
             // 
-            this.currentTimeControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
-            this.currentTimeControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.currentTimeControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.currentTimeControl1.Location = new System.Drawing.Point(0, 0);
-            this.currentTimeControl1.Margin = new System.Windows.Forms.Padding(6);
-            this.currentTimeControl1.Name = "currentTimeControl1";
-            this.currentTimeControl1.Size = new System.Drawing.Size(222, 88);
-            this.currentTimeControl1.TabIndex = 0;
+            this._lbCurrentDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._lbCurrentDate.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbCurrentDate.ForeColor = System.Drawing.Color.White;
+            this._lbCurrentDate.Location = new System.Drawing.Point(6, 3);
+            this._lbCurrentDate.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this._lbCurrentDate.Name = "_lbCurrentDate";
+            this._lbCurrentDate.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this._lbCurrentDate.Size = new System.Drawing.Size(219, 49);
+            this._lbCurrentDate.TabIndex = 8;
+            this._lbCurrentDate.Text = "2024-10-09";
+            this._lbCurrentDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // _lbCurrentTime
+            // 
+            this._lbCurrentTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._lbCurrentTime.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbCurrentTime.ForeColor = System.Drawing.Color.White;
+            this._lbCurrentTime.Location = new System.Drawing.Point(6, 39);
+            this._lbCurrentTime.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this._lbCurrentTime.Name = "_lbCurrentTime";
+            this._lbCurrentTime.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this._lbCurrentTime.Size = new System.Drawing.Size(219, 49);
+            this._lbCurrentTime.TabIndex = 9;
+            this._lbCurrentTime.Text = "16   :   21 :  00";
+            this._lbCurrentTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
             // 
             // MainForm
             // 
@@ -938,7 +966,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel _panelMain;
-        private CurrentTimeControl currentTimeControl1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
@@ -951,6 +978,9 @@
         private System.Windows.Forms.Label _labFaultCode;
         private System.Windows.Forms.Label _labWarningCode;
         private System.Windows.Forms.Label _labRunningStop;
+        private System.Windows.Forms.Label _lbCurrentDate;
+        private System.Windows.Forms.Label _lbCurrentTime;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

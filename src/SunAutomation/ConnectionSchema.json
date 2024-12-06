@@ -1,5 +1,10 @@
 {
   "ItemType": 0,
+<<<<<<< Updated upstream
+=======
+  //"ServerAddress": "127.0.0.1",
+  //"Port": 8800,
+>>>>>>> Stashed changes
   "ServerAddress": "phucthinhautomation.ddns.net",
   "Port": 56285,
   "CommunicationMode": 0,

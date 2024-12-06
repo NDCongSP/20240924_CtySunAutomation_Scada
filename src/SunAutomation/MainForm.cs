@@ -46,6 +46,30 @@ namespace SunAutomation
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            try
+            {
+                RefreshDateTime();
+            }
+            catch { }
+            finally
+            {
+                if (!this.FindForm().IsDisposed)
+                {
+                    timer1.Start();
+                }
+            }
+        }
+
+        private void RefreshDateTime()
+        {
+            var now = DateTime.Now;
+            _lbCurrentDate.Text = $"{now:yyyy-MM-dd}";
+            _lbCurrentTime.Text = $"{now:HH}   :   {now:mm}:   {now:ss}";
+        }
+
         private void _easyDriverConnector_Started(object sender, EventArgs e)
         {
             _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code").ValueChanged += WarningCode_ValueChanged;
@@ -281,6 +305,8 @@ namespace SunAutomation
         private void MainForm_Load(object sender, EventArgs e)
         {
             var serverAddress = _easyDriverConnector.ServerAddress;
+            RefreshDateTime();
+            timer1.Start();
         }
 
         private bool ContainsControl(Control control)

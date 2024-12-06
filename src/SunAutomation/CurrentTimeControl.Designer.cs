@@ -44,7 +44,7 @@
             this._lbCurrentDate.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this._lbCurrentDate.Name = "_lbCurrentDate";
             this._lbCurrentDate.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
-            this._lbCurrentDate.Size = new System.Drawing.Size(280, 49);
+            this._lbCurrentDate.Size = new System.Drawing.Size(363, 49);
             this._lbCurrentDate.TabIndex = 2;
             this._lbCurrentDate.Text = "2024-10-09";
             this._lbCurrentDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -59,7 +59,7 @@
             this._lbCurrentTime.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this._lbCurrentTime.Name = "_lbCurrentTime";
             this._lbCurrentTime.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
-            this._lbCurrentTime.Size = new System.Drawing.Size(272, 49);
+            this._lbCurrentTime.Size = new System.Drawing.Size(355, 49);
             this._lbCurrentTime.TabIndex = 3;
             this._lbCurrentTime.Text = "16   :   21 :  00";
             this._lbCurrentTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -79,7 +79,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CurrentTimeControl";
-            this.Size = new System.Drawing.Size(280, 129);
+            this.Size = new System.Drawing.Size(363, 129);
             this.ResumeLayout(false);
 
         }

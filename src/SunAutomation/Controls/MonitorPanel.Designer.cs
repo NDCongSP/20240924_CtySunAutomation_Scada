@@ -268,7 +268,7 @@
             this.easyLabel1.Location = new System.Drawing.Point(530, 0);
             this.easyLabel1.Name = "easyLabel1";
             this.easyLabel1.Size = new System.Drawing.Size(161, 69);
-            this.easyLabel1.StringFormat = "d";
+            this.easyLabel1.StringFormat = "f0";
             this.easyLabel1.TabIndex = 8;
             this.easyLabel1.TagPath = "Local Station/Channel1/Device1/N1";
             this.easyLabel1.Text = "easyLabel1";
