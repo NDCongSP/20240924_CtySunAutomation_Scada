@@ -72,7 +72,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this._panelMain = new System.Windows.Forms.Panel();
-            this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -82,9 +81,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this._panelHeader = new System.Windows.Forms.Panel();
+            this._labRunningStop = new System.Windows.Forms.Label();
             this._labFaultCode = new System.Windows.Forms.Label();
             this._labWarningCode = new System.Windows.Forms.Label();
-            this._labRunningStop = new System.Windows.Forms.Label();
+            this.currentTimeControl1 = new SunAutomation.CurrentTimeControl();
             this._panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._txbTarget)).BeginInit();
             this._panelBorderTop.SuspendLayout();
@@ -400,10 +400,9 @@
             this.easyLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel1.Name = "easyLabel1";
             this.easyLabel1.Size = new System.Drawing.Size(361, 95);
-            this.easyLabel1.StringFormat = null;
+            this.easyLabel1.StringFormat = "f2";
             this.easyLabel1.TabIndex = 5;
             this.easyLabel1.TagPath = "Local Station/Channel1/Device1/Pd";
-            this.easyLabel1.Text = "0";
             this.easyLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label9
@@ -451,7 +450,7 @@
             this.easyLabel2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel2.Name = "easyLabel2";
             this.easyLabel2.Size = new System.Drawing.Size(361, 95);
-            this.easyLabel2.StringFormat = null;
+            this.easyLabel2.StringFormat = "f1";
             this.easyLabel2.TabIndex = 8;
             this.easyLabel2.TagPath = "Local Station/Channel1/Device1/Td";
             this.easyLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -513,7 +512,7 @@
             this.easyLabel3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel3.Name = "easyLabel3";
             this.easyLabel3.Size = new System.Drawing.Size(361, 95);
-            this.easyLabel3.StringFormat = null;
+            this.easyLabel3.StringFormat = "f1";
             this.easyLabel3.TabIndex = 11;
             this.easyLabel3.TagPath = "Local Station/Channel1/Device1/Q";
             this.easyLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -563,7 +562,7 @@
             this.easyLabel4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel4.Name = "easyLabel4";
             this.easyLabel4.Size = new System.Drawing.Size(361, 95);
-            this.easyLabel4.StringFormat = null;
+            this.easyLabel4.StringFormat = "f1";
             this.easyLabel4.TabIndex = 14;
             this.easyLabel4.TagPath = "Local Station/Channel1/Device1/Ts";
             this.easyLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -592,7 +591,7 @@
             this.easyLabel9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel9.Name = "easyLabel9";
             this.easyLabel9.Size = new System.Drawing.Size(442, 95);
-            this.easyLabel9.StringFormat = null;
+            this.easyLabel9.StringFormat = "f1";
             this.easyLabel9.TabIndex = 8;
             this.easyLabel9.TagPath = "Local Station/Channel1/Device1/Wm";
             this.easyLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -644,7 +643,7 @@
             this.easyLabel8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.easyLabel8.Name = "easyLabel8";
             this.easyLabel8.Size = new System.Drawing.Size(442, 95);
-            this.easyLabel8.StringFormat = null;
+            this.easyLabel8.StringFormat = "f4";
             this.easyLabel8.TabIndex = 8;
             this.easyLabel8.TagPath = "Local Station/Channel1/Device1/dPi";
             this.easyLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -692,17 +691,6 @@
             this._panelMain.Size = new System.Drawing.Size(1924, 746);
             this._panelMain.TabIndex = 3;
             // 
-            // currentTimeControl1
-            // 
-            this.currentTimeControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
-            this.currentTimeControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.currentTimeControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.currentTimeControl1.Location = new System.Drawing.Point(0, 0);
-            this.currentTimeControl1.Margin = new System.Windows.Forms.Padding(6);
-            this.currentTimeControl1.Name = "currentTimeControl1";
-            this.currentTimeControl1.Size = new System.Drawing.Size(222, 88);
-            this.currentTimeControl1.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -734,7 +722,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 88);
             this.label1.TabIndex = 3;
-            this.label1.Text = "NX300-C100";
+            this.label1.Text = "NX200-C100";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
@@ -815,6 +803,16 @@
             this._panelHeader.Size = new System.Drawing.Size(1924, 88);
             this._panelHeader.TabIndex = 0;
             // 
+            // _labRunningStop
+            // 
+            this._labRunningStop.BackColor = System.Drawing.Color.White;
+            this._labRunningStop.Location = new System.Drawing.Point(245, 26);
+            this._labRunningStop.Name = "_labRunningStop";
+            this._labRunningStop.Size = new System.Drawing.Size(243, 29);
+            this._labRunningStop.TabIndex = 7;
+            this._labRunningStop.Text = "Running/Stop";
+            this._labRunningStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // _labFaultCode
             // 
             this._labFaultCode.BackColor = System.Drawing.Color.White;
@@ -835,15 +833,16 @@
             this._labWarningCode.Text = "Warning_code";
             this._labWarningCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // _labRunningStop
+            // currentTimeControl1
             // 
-            this._labRunningStop.BackColor = System.Drawing.Color.White;
-            this._labRunningStop.Location = new System.Drawing.Point(245, 26);
-            this._labRunningStop.Name = "_labRunningStop";
-            this._labRunningStop.Size = new System.Drawing.Size(243, 29);
-            this._labRunningStop.TabIndex = 7;
-            this._labRunningStop.Text = "Running/Stop";
-            this._labRunningStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.currentTimeControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(160)))));
+            this.currentTimeControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.currentTimeControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.currentTimeControl1.Location = new System.Drawing.Point(0, 0);
+            this.currentTimeControl1.Margin = new System.Windows.Forms.Padding(6);
+            this.currentTimeControl1.Name = "currentTimeControl1";
+            this.currentTimeControl1.Size = new System.Drawing.Size(222, 88);
+            this.currentTimeControl1.TabIndex = 0;
             // 
             // MainForm
             // 
