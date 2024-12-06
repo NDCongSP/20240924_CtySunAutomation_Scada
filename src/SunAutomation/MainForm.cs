@@ -24,7 +24,7 @@ namespace SunAutomation
         public MainForm()
         {            
             InitializeComponent();
-            Text = "KhoiHung Tech";
+            Text = "Khoi Hung Tech";
 
             _easyDriverConnector = new EasyDriverConnector();
             _easyDriverConnector.ConnectionStatusChaged += _easyDriverConnector_ConnectionStatusChaged;
@@ -38,7 +38,22 @@ namespace SunAutomation
             _btnMain.Click += _btnMain_Click;
             _btnMonitor.Click += _btnMonitor_Click;
             _btnSetup.Click += _btnSetup_Click;
+
+            _easyDriverConnector.Started += _easyDriverConnector_Started;
             
+        }
+
+        private void _easyDriverConnector_Started(object sender, EventArgs e)
+        {
+            _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code").ValueChanged += WarningCode_ValueChanged;
+            _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code").ValueChanged += FaultCode_ValueChanged;
+
+            WarningCode_ValueChanged(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code")
+                    , new TagValueChangedEventArgs(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code")
+                    , "", _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Warning_code").Value));
+            FaultCode_ValueChanged(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code")
+                    , new TagValueChangedEventArgs(_easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code")
+                    , "", _easyDriverConnector.GetTag($"Local Station/Channel1/Device1/Fault_code").Value));
         }
 
         private void _easyDriverConnector_ConnectionStatusChaged(object sender, ConnectionStatusChangedEventArgs e)
@@ -59,6 +74,65 @@ namespace SunAutomation
                 _lbStatus.Text = _easyDriverConnector.ConnectionStatus.ToString();
 
             }
+        }
+
+        private void WarningCode_ValueChanged(object sender, TagValueChangedEventArgs e)
+        {
+            try
+            {
+                if (e.NewValue == "0")
+                {
+                    if (_labWarningCode.InvokeRequired)
+                    {
+                        _labWarningCode.BackColor = Color.White;
+                    }
+                    else
+                    {
+                        _labWarningCode.BackColor=Color.White;
+                    }
+                }
+                else
+                {
+                    if (_labWarningCode.InvokeRequired)
+                    {
+                        _labWarningCode.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        _labWarningCode.BackColor = Color.Yellow;
+                    }
+                }
+            }
+            catch {  }
+        }
+        private void FaultCode_ValueChanged(object sender, TagValueChangedEventArgs e)
+        {
+            try
+            {
+                if (e.NewValue == "0")
+                {
+                    if (_labFaultCode.InvokeRequired)
+                    {
+                        _labFaultCode.BackColor = Color.White;
+                    }
+                    else
+                    {
+                        _labFaultCode.BackColor = Color.White;
+                    }
+                }
+                else
+                {
+                    if (_labFaultCode.InvokeRequired)
+                    {
+                        _labFaultCode.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        _labFaultCode.BackColor = Color.Yellow;
+                    }
+                }
+            }
+            catch { }
         }
 
         private Color GetConnectionStatusColor(ConnectionStatus status)

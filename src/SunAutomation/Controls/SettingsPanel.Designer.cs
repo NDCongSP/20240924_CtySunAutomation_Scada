@@ -256,6 +256,7 @@
             this.easyTextBox2.HightLightStatusTime = 3;
             this.easyTextBox2.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox2.Name = "easyTextBox2";
+            this.easyTextBox2.ReadOnly = true;
             this.easyTextBox2.Role = null;
             this.easyTextBox2.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox2.StringFormat = null;
@@ -401,6 +402,7 @@
             this.easyTextBox1.HightLightStatusTime = 3;
             this.easyTextBox1.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox1.Name = "easyTextBox1";
+            this.easyTextBox1.ReadOnly = true;
             this.easyTextBox1.Role = null;
             this.easyTextBox1.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox1.StringFormat = null;
@@ -546,6 +548,7 @@
             this.easyTextBox3.HightLightStatusTime = 3;
             this.easyTextBox3.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox3.Name = "easyTextBox3";
+            this.easyTextBox3.ReadOnly = true;
             this.easyTextBox3.Role = null;
             this.easyTextBox3.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox3.StringFormat = null;
@@ -691,6 +694,7 @@
             this.easyTextBox4.HightLightStatusTime = 3;
             this.easyTextBox4.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox4.Name = "easyTextBox4";
+            this.easyTextBox4.ReadOnly = true;
             this.easyTextBox4.Role = null;
             this.easyTextBox4.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox4.StringFormat = null;
@@ -744,7 +748,7 @@
             this.label11.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.label11.Size = new System.Drawing.Size(150, 69);
             this.label11.TabIndex = 1;
-            this.label11.Text = "kgf/cm2";
+            this.label11.Text = "kPa";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label12
@@ -836,6 +840,7 @@
             this.easyTextBox5.HightLightStatusTime = 3;
             this.easyTextBox5.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox5.Name = "easyTextBox5";
+            this.easyTextBox5.ReadOnly = true;
             this.easyTextBox5.Role = null;
             this.easyTextBox5.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox5.StringFormat = null;
@@ -889,7 +894,7 @@
             this.label14.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.label14.Size = new System.Drawing.Size(150, 69);
             this.label14.TabIndex = 1;
-            this.label14.Text = "kgf/cm2";
+            this.label14.Text = "kPa";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label15
@@ -981,6 +986,7 @@
             this.easyTextBox6.HightLightStatusTime = 3;
             this.easyTextBox6.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox6.Name = "easyTextBox6";
+            this.easyTextBox6.ReadOnly = true;
             this.easyTextBox6.Role = null;
             this.easyTextBox6.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox6.StringFormat = null;
@@ -1126,6 +1132,7 @@
             this.easyTextBox7.HightLightStatusTime = 3;
             this.easyTextBox7.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox7.Name = "easyTextBox7";
+            this.easyTextBox7.ReadOnly = true;
             this.easyTextBox7.Role = null;
             this.easyTextBox7.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox7.StringFormat = null;
@@ -1271,6 +1278,7 @@
             this.easyTextBox8.HightLightStatusTime = 3;
             this.easyTextBox8.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox8.Name = "easyTextBox8";
+            this.easyTextBox8.ReadOnly = true;
             this.easyTextBox8.Role = null;
             this.easyTextBox8.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox8.StringFormat = null;
@@ -1416,6 +1424,7 @@
             this.easyTextBox9.HightLightStatusTime = 3;
             this.easyTextBox9.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox9.Name = "easyTextBox9";
+            this.easyTextBox9.ReadOnly = true;
             this.easyTextBox9.Role = null;
             this.easyTextBox9.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox9.StringFormat = null;
@@ -1561,6 +1570,7 @@
             this.easyTextBox10.HightLightStatusTime = 3;
             this.easyTextBox10.Location = new System.Drawing.Point(11, 10);
             this.easyTextBox10.Name = "easyTextBox10";
+            this.easyTextBox10.ReadOnly = true;
             this.easyTextBox10.Role = null;
             this.easyTextBox10.Size = new System.Drawing.Size(201, 50);
             this.easyTextBox10.StringFormat = null;
@@ -1614,7 +1624,7 @@
             this.label29.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.label29.Size = new System.Drawing.Size(150, 69);
             this.label29.TabIndex = 1;
-            this.label29.Text = "°C";
+            this.label29.Text = "kW";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label30
