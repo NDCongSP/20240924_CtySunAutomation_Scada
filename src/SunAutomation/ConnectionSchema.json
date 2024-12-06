@@ -1,7 +1,7 @@
 {
   "ItemType": 0,
-  "ServerAddress": "127.0.0.1",
-  "Port": 8800,
+  "ServerAddress": "phucthinhautomation.ddns.net",
+  "Port": 56285,
   "CommunicationMode": 0,
   "RefreshRate": 1000,
   "CreatedDate": "2024-10-30T10:37:59.7558124+07:00",
