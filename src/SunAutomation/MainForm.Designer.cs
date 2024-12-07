@@ -82,10 +82,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this._panelHeader = new System.Windows.Forms.Panel();
+            this._lbCurrentDate = new System.Windows.Forms.Label();
             this._labRunningStop = new System.Windows.Forms.Label();
             this._labFaultCode = new System.Windows.Forms.Label();
             this._labWarningCode = new System.Windows.Forms.Label();
-            this._lbCurrentDate = new System.Windows.Forms.Label();
             this._lbCurrentTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this._panelBottom.SuspendLayout();
@@ -203,7 +203,7 @@
             this._txbTarget.Name = "_txbTarget";
             this._txbTarget.Role = null;
             this._txbTarget.Size = new System.Drawing.Size(271, 93);
-            this._txbTarget.StringFormat = null;
+            this._txbTarget.StringFormat = "f1";
             this._txbTarget.TabIndex = 13;
             this._txbTarget.TagPath = "Local Station/Channel1/Device1/Target";
             this._txbTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -807,6 +807,21 @@
             this._panelHeader.Size = new System.Drawing.Size(1924, 88);
             this._panelHeader.TabIndex = 0;
             // 
+            // _lbCurrentDate
+            // 
+            this._lbCurrentDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._lbCurrentDate.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbCurrentDate.ForeColor = System.Drawing.Color.White;
+            this._lbCurrentDate.Location = new System.Drawing.Point(6, 3);
+            this._lbCurrentDate.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this._lbCurrentDate.Name = "_lbCurrentDate";
+            this._lbCurrentDate.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
+            this._lbCurrentDate.Size = new System.Drawing.Size(219, 49);
+            this._lbCurrentDate.TabIndex = 8;
+            this._lbCurrentDate.Text = "2024-10-09";
+            this._lbCurrentDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // _labRunningStop
             // 
             this._labRunningStop.BackColor = System.Drawing.Color.White;
@@ -838,21 +853,6 @@
             this._labWarningCode.Text = "Warning_code";
             this._labWarningCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // _lbCurrentDate
-            // 
-            this._lbCurrentDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._lbCurrentDate.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._lbCurrentDate.ForeColor = System.Drawing.Color.White;
-            this._lbCurrentDate.Location = new System.Drawing.Point(6, 3);
-            this._lbCurrentDate.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this._lbCurrentDate.Name = "_lbCurrentDate";
-            this._lbCurrentDate.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
-            this._lbCurrentDate.Size = new System.Drawing.Size(219, 49);
-            this._lbCurrentDate.TabIndex = 8;
-            this._lbCurrentDate.Text = "2024-10-09";
-            this._lbCurrentDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // _lbCurrentTime
             // 
             this._lbCurrentTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -870,7 +870,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Interval = 500;
             // 
             // MainForm
             // 

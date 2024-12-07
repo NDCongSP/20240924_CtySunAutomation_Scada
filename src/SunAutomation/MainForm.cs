@@ -44,6 +44,8 @@ namespace SunAutomation
                 _easyDriverConnector_Started(null, null);
             }
 
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace SunAutomation
         {
             var now = DateTime.Now;
             _lbCurrentDate.Text = $"{now:yyyy-MM-dd}";
-            _lbCurrentTime.Text = $"{now:HH}   :   {now:mm}:   {now:ss}";
+            _lbCurrentTime.Text = $"{now:HH}  :  {now:mm}  :  {now:ss}";
         }
 
         private void _easyDriverConnector_Started(object sender, EventArgs e)
@@ -107,51 +109,51 @@ namespace SunAutomation
         {
             try
             {
-                //if (e.NewValue == "1")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Checking");
-                //}
-                //else if (e.NewValue == "2")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Ready");
-                //}
-                //else if (e.NewValue == "4")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Starting");                
-                //}
-                //else if (e.NewValue == "8")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Operating");
-                //}
-                //else if (e.NewValue == "16")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Stopping");
-                //}
-                //else if (e.NewValue == "32")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Fault");
-                //}
-                //else if (e.NewValue == "64")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Reset");
-                //}
-                //else if (e.NewValue == "128")
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Emergency Stop");
-                //}
-                //else
-                //{
-                //    SaveSetLabelText(_labRunningStop, "Stop");
-                //}
-
-                if (e.NewValue == "81838")
+                if (e.NewValue == "1")
                 {
-                    SaveSetLabelText(_labRunningStop, "Stop");
+                    SaveSetLabelText(_labRunningStop, "Checking");
+                }
+                else if (e.NewValue == "2")
+                {
+                    SaveSetLabelText(_labRunningStop, "Ready");
+                }
+                else if (e.NewValue == "4")
+                {
+                    SaveSetLabelText(_labRunningStop, "Starting");
+                }
+                else if (e.NewValue == "8")
+                {
+                    SaveSetLabelText(_labRunningStop, "Operating");
+                }
+                else if (e.NewValue == "16")
+                {
+                    SaveSetLabelText(_labRunningStop, "Stopping");
+                }
+                else if (e.NewValue == "32")
+                {
+                    SaveSetLabelText(_labRunningStop, "Fault");
+                }
+                else if (e.NewValue == "64")
+                {
+                    SaveSetLabelText(_labRunningStop, "Reset");
+                }
+                else if (e.NewValue == "128")
+                {
+                    SaveSetLabelText(_labRunningStop, "Emergency Stop");
                 }
                 else
                 {
-                    SaveSetLabelText(_labRunningStop, "Running");
+                    SaveSetLabelText(_labRunningStop, "Stop");
                 }
+
+                //if (e.NewValue == "18138")
+                //{
+                //    SaveSetLabelText(_labRunningStop, "Stop");
+                //}
+                //else
+                //{
+                //    SaveSetLabelText(_labRunningStop, "Running");
+                //}
             }
             catch { }
         }
@@ -306,6 +308,7 @@ namespace SunAutomation
         {
             var serverAddress = _easyDriverConnector.ServerAddress;
             RefreshDateTime();
+            timer1.Tick += timer1_Tick;
             timer1.Start();
         }
 
